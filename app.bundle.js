@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 337:
+/***/ 338:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13,7 +13,7 @@ __export(__webpack_require__(517));
 
 /***/ },
 
-/***/ 338:
+/***/ 339:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,10 +43,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var platform_browser_1 = __webpack_require__(87);
-var router_1 = __webpack_require__(259);
+var router_1 = __webpack_require__(260);
 var app_component_1 = __webpack_require__(514);
 var pages_1 = __webpack_require__(521);
-var core_2 = __webpack_require__(338);
+var core_2 = __webpack_require__(339);
 var appRoutes = [
     {
         path: '',
@@ -110,7 +110,7 @@ exports.AppComponent = AppComponent;
 
 "use strict";
 
-var nav_bar_1 = __webpack_require__(337);
+var nav_bar_1 = __webpack_require__(338);
 exports.coreComponents = [
     nav_bar_1.NavBarComponent
 ];
@@ -126,7 +126,7 @@ exports.coreComponents = [
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(337));
+__export(__webpack_require__(338));
 __export(__webpack_require__(515));
 
 
@@ -182,7 +182,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var core_2 = __webpack_require__(338);
+var core_2 = __webpack_require__(339);
 var CoreModule = (function () {
     function CoreModule() {
     }
@@ -290,17 +290,27 @@ module.exports = "<h1>Home Page</h1>"
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-
-var platform_browser_dynamic_1 = __webpack_require__(175);
+/* WEBPACK VAR INJECTION */(function(process) {
+var platform_browser_dynamic_1 = __webpack_require__(176);
 var core_1 = __webpack_require__(1);
 var app_module_1 = __webpack_require__(400);
-if (development === 'production') {
-    core_1.enableProdMode();
+try {
+    console.assert(process, 'process is undefined.');
+    console.assert({"BUILDTARGET":"development","ENV":"development","NODE_ENV":"development","HMR":false}, 'process.env is undefined.');
+    console.assert("development", 'process.env.ENV is undefined.');
+    console.info("Current Mode: " + "development");
+    if (false) {
+        core_1.enableProdMode();
+    }
+}
+catch (e) {
+    console.error(e);
 }
 platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule).catch(function (error) {
     console.error('app error: %o', error);
 });
 
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(175)))
 
 /***/ }
 
