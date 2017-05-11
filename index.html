@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <script>
+        sessionStorage.redirect = location.href;
+    </script>
     <base href="/test/">
     <title>djnaumov (alpha)</title>
     <meta name="description" content="Podcasts and tracks by Vladimir Naumov.">
@@ -52,12 +55,7 @@
             </div>
         </div>
     </cmp-app>
-</div>
-    
-<script>
-    sessionStorage.redirect = location.href;
-</script>
-    
+</div>  
 <script>
     (function(){        
         var redirect = sessionStorage.redirect;
