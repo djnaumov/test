@@ -2,9 +2,6 @@
 <html>
 
 <head>
-    <script>
-        sessionStorage.redirect = location.href;
-    </script>
     <base href="./">
     <title>djnaumov (alpha)</title>
     <meta name="description" content="Podcasts and tracks by Vladimir Naumov.">
@@ -56,14 +53,5 @@
         </div>
     </cmp-app>
 </div>  
-<script>
-    (function(){        
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.href) {
-            history.replaceState(null, null, redirect);
-        }
-    })();
-</script>
 <script type="text/javascript" src="bootstrap.d76ddb00d6a07ca30768.bundle.js"></script><script type="text/javascript" src="polyfills.eb4095f911d98d730905.bundle.js"></script><script type="text/javascript" src="vendor.d3280d1c8aa2d2e5d086.bundle.js"></script><script type="text/javascript" src="app.388e554cac13b5f7eec4.bundle.js"></script><script type="text/javascript" src="fontawesome.a806592b1779ffb6a2e1.bundle.js"></script></body>
 </html>
